@@ -28,7 +28,8 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/hsf89757/SFNetwork.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '14.0'
+  s.swift_version = '5.0'
 
   s.source_files = 'SFNetwork/Classes/**/*'
   
@@ -39,4 +40,14 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  
+  # --- 依赖 --- # # Basic
+  s.dependency 'SFBase',                      '~> 0.1.0'
+  s.dependency 'SFExtension',                 '~> 0.1.0'
+  # Server
+  s.dependency 'SFLogger',                    '~> 0.1.0'
+  # Third
+  s.dependency 'LeanCloud'
+  
+  
 end

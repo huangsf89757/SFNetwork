@@ -1,27 +1,67 @@
 PODS:
-  - FBSnapshotTestCase (2.1.4):
-    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
-  - FBSnapshotTestCase/Core (2.1.4)
-  - FBSnapshotTestCase/SwiftSupport (2.1.4):
-    - FBSnapshotTestCase/Core
-  - SFNetwork (0.1.0)
+  - Alamofire (5.9.1)
+  - GRDB.swift (6.15.1):
+    - GRDB.swift/standard (= 6.15.1)
+  - GRDB.swift/standard (6.15.1)
+  - LeanCloud (17.11.0):
+    - LeanCloud/RTM (= 17.11.0)
+  - LeanCloud/Foundation (17.11.0):
+    - Alamofire (~> 5.7)
+  - LeanCloud/RTM (17.11.0):
+    - GRDB.swift (~> 6.15.0)
+    - LeanCloud/Foundation (= 17.11.0)
+    - SwiftProtobuf (~> 1.22)
+  - SFBase (0.1.0):
+    - Then (~> 3.0.0)
+  - SFExtension (0.1.0)
+  - SFLogger (0.1.0):
+    - SwiftyBeaver
+  - SFNetwork (0.1.0):
+    - LeanCloud
+    - SFBase (~> 0.1.0)
+    - SFExtension (~> 0.1.0)
+    - SFLogger (~> 0.1.0)
+  - SwiftProtobuf (1.28.1)
+  - SwiftyBeaver (2.1.1)
+  - Then (3.0.0)
 
 DEPENDENCIES:
-  - FBSnapshotTestCase (~> 2.1.4)
-  - SFNetwork (from `../`)
+  - SFBase (from `../../../Basic/SFBase/`)
+  - SFExtension (from `../../../Basic/SFExtension/`)
+  - SFLogger (from `../../../Server/SFLogger/`)
+  - SFNetwork (from `../../../Server/SFNetwork/`)
 
 SPEC REPOS:
-  trunk:
-    - FBSnapshotTestCase
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - GRDB.swift
+    - LeanCloud
+    - SwiftProtobuf
+    - SwiftyBeaver
+    - Then
 
 EXTERNAL SOURCES:
+  SFBase:
+    :path: "../../../Basic/SFBase/"
+  SFExtension:
+    :path: "../../../Basic/SFExtension/"
+  SFLogger:
+    :path: "../../../Server/SFLogger/"
   SFNetwork:
-    :path: "../"
+    :path: "../../../Server/SFNetwork/"
 
 SPEC CHECKSUMS:
-  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  SFNetwork: 641b954260f57a279a1818923b94cf3b1a9d3054
+  Alamofire: f36a35757af4587d8e4f4bfa223ad10be2422b8c
+  GRDB.swift: a6b7e9900aa300d0cbf1f1c5f47b8f32ae51e30c
+  LeanCloud: 808532530fae85682b1747bf248bb3dc64a37f13
+  SFBase: 1eba5a746b2470d76b0fec3477288ebea87ebb53
+  SFExtension: db5d207c8b9cb15d09d28858aec071d51050f3c5
+  SFLogger: 32dc52852844a0ac9243948c00d64e02cc5a680a
+  SFNetwork: 682d004341fec55b8820133a1ebecc604fae8d96
+  SwiftProtobuf: cc47329e2a10c235e35ba4faed831742ae5135ce
+  SwiftyBeaver: ade157e4f857812e7d7f15f2e3396bb8733f8a1c
+  Then: 844265ae87834bbe1147d91d5d41a404da2ec27d
 
-PODFILE CHECKSUM: 3b079a6e31b0014c01d112439b7ac975b3463c05
+PODFILE CHECKSUM: a8d56170827fa39e23dec37776f476f81b432f77
 
-COCOAPODS: 1.12.1
+COCOAPODS: 1.16.2
